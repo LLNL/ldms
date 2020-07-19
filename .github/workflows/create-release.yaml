@@ -39,3 +39,5 @@ jobs:
       with:
         files: |
           ./${{ env.TARBALL_NAME }}
+          ./rpm/ovis-ldms-toss4.spec
+          ./rpm/ovis-ldms-toss5.spec
