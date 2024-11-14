@@ -255,6 +255,10 @@ int ldmsd_row_cache(ldmsd_row_cache_t rcache,
 	ldmsd_row_group_t group;
 	struct rbn *group_rbn;
 
+        if (rcache == NULL) {
+                return EINVAL;
+        }
+
 	/* Insert the row_list into the tree using rcache->row_key */
 	ldmsd_row_cache_entry_t entry = calloc(1, sizeof(*entry));
 	if (!entry)
