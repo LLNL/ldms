@@ -16,6 +16,7 @@
 #include "sampler_base.h"
 
 #include <stddef.h> /* libcxi.h neglects to include this */
+#include <string.h> /* cxi_prov_hw.h (included by libcxi.h) neglects to include this */
 #include <libcxi/libcxi.h>
 #include <cassini_cntr_desc.h> /* needed at least starting with shs-2.1.0 */
 #define _GNU_SOURCE
